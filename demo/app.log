@@ -1,0 +1,1107 @@
+2024-11-18 09:54:06,292 - ERROR - 404 Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-18 09:54:06,293 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject4\app.py", line 121, in page_not_found
+    return render_template('404.html'), 404
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2024-11-18 09:54:06,299 - ERROR - Internal Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2024-11-18 09:54:12,451 - ERROR - 404 Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-18 09:54:12,451 - ERROR - Exception on /404.html [GET]
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject4\app.py", line 121, in page_not_found
+    return render_template('404.html'), 404
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2024-11-18 09:54:12,453 - ERROR - Internal Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2024-11-18 09:54:15,159 - ERROR - 404 Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-18 09:54:15,161 - ERROR - Exception on /404.html [GET]
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject4\app.py", line 121, in page_not_found
+    return render_template('404.html'), 404
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2024-11-18 09:54:15,162 - ERROR - Internal Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2024-11-18 09:55:20,299 - ERROR - 404 Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-18 09:55:20,300 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject4\app.py", line 121, in page_not_found
+    return render_template('404.html'), 404
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2024-11-18 09:55:20,302 - ERROR - Internal Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2024-11-18 09:56:05,423 - ERROR - 404 Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-18 09:56:05,423 - ERROR - Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject4\app.py", line 121, in page_not_found
+    return render_template('404.html'), 404
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2024-11-18 09:56:05,425 - ERROR - Internal Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2024-11-18 10:02:15,495 - ERROR - 404 Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-18 10:02:15,495 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject4\app.py", line 121, in page_not_found
+    return render_template('404.html'), 404
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2024-11-18 10:02:15,497 - ERROR - Internal Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2024-11-18 10:07:47,234 - ERROR - ValueError in compare_strings_endpoint: Invalid format for A column. Expected a string of length 3 composed of digits.
+2024-11-18 10:07:47,621 - ERROR - ValueError in compare_strings_endpoint: Invalid format for A column. Expected a string of length 3 composed of digits.
+2024-11-18 10:07:47,814 - ERROR - ValueError in compare_strings_endpoint: Invalid format for A column. Expected a string of length 3 composed of digits.
+2024-11-18 10:07:48,008 - ERROR - ValueError in compare_strings_endpoint: Invalid format for A column. Expected a string of length 3 composed of digits.
+2024-11-18 10:07:49,299 - ERROR - ValueError in compare_strings_endpoint: Invalid format for A column. Expected a string of length 3 composed of digits.
+2024-11-18 10:07:49,484 - ERROR - ValueError in compare_strings_endpoint: Invalid format for A column. Expected a string of length 3 composed of digits.
+2024-11-18 10:07:49,680 - ERROR - ValueError in compare_strings_endpoint: Invalid format for A column. Expected a string of length 3 composed of digits.
+2024-11-18 10:08:02,694 - ERROR - 404 Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-18 10:08:02,694 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject4\app.py", line 121, in page_not_found
+    return render_template('404.html'), 404
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2024-11-18 10:08:02,695 - ERROR - Internal Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2024-11-18 10:08:17,380 - ERROR - 404 Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-18 10:08:17,381 - ERROR - Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject4\app.py", line 121, in page_not_found
+    return render_template('404.html'), 404
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2024-11-18 10:08:17,383 - ERROR - Internal Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2024-11-18 10:08:19,726 - ERROR - 404 Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-18 10:08:19,727 - ERROR - Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject4\app.py", line 121, in page_not_found
+    return render_template('404.html'), 404
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2024-11-18 10:08:19,729 - ERROR - Internal Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2024-11-18 10:09:08,949 - ERROR - 404 Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-18 10:09:08,949 - ERROR - Exception on /process_data [POST]
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject4\app.py", line 121, in page_not_found
+    return render_template('404.html'), 404
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2024-11-18 10:09:08,951 - ERROR - Internal Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2024-11-18 10:09:09,486 - ERROR - 404 Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-18 10:09:09,486 - ERROR - Exception on /process_data [POST]
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject4\app.py", line 121, in page_not_found
+    return render_template('404.html'), 404
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2024-11-18 10:09:09,487 - ERROR - Internal Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2024-11-18 10:09:09,902 - ERROR - 404 Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-18 10:09:09,902 - ERROR - Exception on /process_data [POST]
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject4\app.py", line 121, in page_not_found
+    return render_template('404.html'), 404
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2024-11-18 10:09:09,904 - ERROR - Internal Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2024-11-18 10:11:27,229 - ERROR - 404 Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-18 10:11:27,229 - ERROR - Exception on /process_data [POST]
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject4\app.py", line 121, in page_not_found
+    return render_template('404.html'), 404
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2024-11-18 10:11:27,231 - ERROR - Internal Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2024-11-18 10:13:01,524 - ERROR - 404 Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-18 10:13:01,524 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject4\app.py", line 121, in page_not_found
+    return render_template('404.html'), 404
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2024-11-18 10:13:01,525 - ERROR - Internal Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2024-11-18 10:13:16,809 - ERROR - 404 Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-18 10:13:16,809 - ERROR - Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject4\app.py", line 121, in page_not_found
+    return render_template('404.html'), 404
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2024-11-18 10:13:16,811 - ERROR - Internal Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2024-11-18 10:13:20,188 - ERROR - 404 Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-18 10:13:20,189 - ERROR - Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject4\app.py", line 121, in page_not_found
+    return render_template('404.html'), 404
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2024-11-18 10:13:20,191 - ERROR - Internal Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2024-11-18 10:14:25,297 - ERROR - 404 Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-18 10:14:25,297 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject4\app.py", line 121, in page_not_found
+    return render_template('404.html'), 404
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2024-11-18 10:14:25,298 - ERROR - Internal Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2024-11-18 10:16:46,807 - ERROR - 404 Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-18 10:16:46,808 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject4\app.py", line 121, in page_not_found
+    return render_template('404.html'), 404
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2024-11-18 10:16:46,809 - ERROR - Internal Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2024-11-18 10:22:08,352 - ERROR - 404 Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-18 10:22:08,353 - ERROR - Exception on /process_data [OPTIONS]
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject4\app.py", line 121, in page_not_found
+    return render_template('404.html'), 404
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2024-11-18 10:22:08,354 - ERROR - Internal Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2024-11-18 10:25:15,035 - ERROR - 404 Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-18 10:25:15,035 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject4\app.py", line 121, in page_not_found
+    return render_template('404.html'), 404
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2024-11-18 10:25:15,036 - ERROR - Internal Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2024-11-18 10:25:53,962 - ERROR - 404 Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-18 10:25:53,963 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject4\app.py", line 121, in page_not_found
+    return render_template('404.html'), 404
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2024-11-18 10:25:53,964 - ERROR - Internal Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2024-11-18 10:26:11,177 - ERROR - 404 Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-18 10:26:11,177 - ERROR - Exception on /index.html [GET]
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject4\app.py", line 121, in page_not_found
+    return render_template('404.html'), 404
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2024-11-18 10:26:11,179 - ERROR - Internal Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2024-11-18 10:27:18,264 - ERROR - 404 Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-18 10:27:18,265 - ERROR - Exception on /process_data [OPTIONS]
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject4\app.py", line 121, in page_not_found
+    return render_template('404.html'), 404
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2024-11-18 10:27:18,266 - ERROR - Internal Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2024-11-18 10:27:19,150 - ERROR - 404 Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-18 10:27:19,150 - ERROR - Exception on /process_data [OPTIONS]
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject4\app.py", line 121, in page_not_found
+    return render_template('404.html'), 404
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2024-11-18 10:27:19,152 - ERROR - Internal Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2024-11-18 10:27:19,707 - ERROR - 404 Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-18 10:27:19,708 - ERROR - Exception on /process_data [OPTIONS]
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+  File "D:\Users\ZLX\PycharmProjects\pythonProject4\app.py", line 121, in page_not_found
+    return render_template('404.html'), 404
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\Users\ZLX\PycharmProjects\pythonProject2\venv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2024-11-18 10:27:19,709 - ERROR - Internal Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
